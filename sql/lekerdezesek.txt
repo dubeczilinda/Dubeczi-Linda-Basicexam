@@ -1,0 +1,27 @@
+//első lekérdezés
+SELECT house, COUNT(id) AS 'Karakterek száma'
+FROM characters
+WHERE dead = '' 
+	AND organization = ''
+GROUP BY house
+
+//második lekérdezés
+SELECT *
+FROM characters
+WHERE dead =''
+AND bio = '%hero%'
+
+//harmadik lekérdezés
+SELECT *
+FROM characters
+WHERE organization = 'nightwatch'
+AND dead = ''
+AND house = ''
+
+//negyedik
+SELECT name AS 'Hero', alias AS 'Nick Name', house AS 'Big House'
+FROM characters
+WHERE dead = ''
+AND house <> 'lannister'
+AND organization <> 'royalguard'
+AND bio <> '%lannister%' OR '%king\'s landing%'
