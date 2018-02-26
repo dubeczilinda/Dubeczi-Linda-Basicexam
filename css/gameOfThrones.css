@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+  }
+
+.map {
+    left: 0;
+    width: 80%;
+    
+}
+#pic {
+    position: relative;
+    width: 100%;
+    background-size: cover; 
+}
+
+.text {
+    width: 20%;
+    background: black;
+    right: 0;
+    color: white;
+}
+
+h1 {
+    font-family: "/fonts/Game of Thrones.ttf";
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+pNames {
+    font-family: "/fonts/Game of Thrones.ttf";
+    font-size: 12px;
+    columns: grey;
+}
+
+#search {
+    background: white;
+}
+
+.divPortrait {
+    border-radius: 50px;
+    border: 1px grey;
+}
+
+.targetCharacter {
+    height: 150px;
+}
+
+#search {
+    bottom: 20px;
+    right: 20px;
+}

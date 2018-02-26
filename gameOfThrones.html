@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Of Thrones</title>
+    <link rel="stylesheet" href="/css/gameOfThrones.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="split map" id="map">
+            <img id="pic" src="assets/site/mapblue.jpg" alt="map">
+        </div>
+
+        <div class="split text">
+                <h1>GAME OF THRONES</h1>
+                <div id="targetCharacter">
+
+                </div>
+                <input type="button" id="search-button" value=">">
+                <span>
+                <i class="far fa-search"></i>
+                </span>
+                <input type="text" id="search" placeholder="Search a character">
+        </div>
+     
+    </div>
+
+    <script src="/json/characters.json"></script>
+    <script src="/js/got.js"></script>
+</body>
+</html>
